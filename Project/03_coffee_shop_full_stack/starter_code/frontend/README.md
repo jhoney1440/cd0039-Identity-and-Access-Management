@@ -16,7 +16,7 @@ The Ionic Command Line Interface is required to serve and build the frontend. In
 
 #### Installing project dependencies
 
-This project uses NPM to manage software dependencies. NPM Relies on the package.json file located in the `frontend` directory of this repository. After cloning, open your terminal and run:
+This project uses NPM to manage software dependencies. NPM Relies on the package.json file located in the `frontend` directory of this repository. Aer cloning, open your terminal and run:
 
 ```bash
 npm install

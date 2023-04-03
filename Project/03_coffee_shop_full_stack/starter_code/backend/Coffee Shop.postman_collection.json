@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "fced3341-5cca-4658-bd21-10cf3eaa2a3e",
+		"name": "Coffee Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "drinks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJwaWZnbDhER0VMZVBEN0V3Mlp3S0JiTzRlcnpYVmNtREBjbGllbnRzIiwiYXVkIjoiaW1hZ2UiLCJpYXQiOjE2ODAzNDY5MjQsImV4cCI6MTY4MDQzMzMyNCwiYXpwIjoicGlmZ2w4REdFTGVQRDdFdzJad0tCYk80ZXJ6WFZjbUQiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.Wc21tVMfZozEbKKFcghAriff_BKb9ChyrG46GsjbwVBVRZKOpU9H1E2esHQlz8UrlcPDquBKzTTEbUvWZhlm-tGw_NIuOqJu0BnN1U-_Xwaj4NjQvDQisTmcB9NbIsP60a8I1w44vD3n6YNZUKTdJwCgMST4LAU69I1rk4aAUpiLnfXh2IKYDxz9bhVwRGIR6yZ5HJzX-3GyA55Xg0bhRawmyTr077V-56D7skIpXRTgJ_1ukBhSYpYLgTYkh8KQkiW4h2tFAmXCLqCyHAsghVYJZdqUoXO_-UEOD4GTlGhZvrQYeRw6MU3TUlzNmnta0r_fqC",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "jwt",
+		"jwt": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "algorithm",
+				"value": "HS256",
+				"type": "string"
+			},
+			{
+				"key": "isSecretBase64Encoded",
+				"value": false,
+				"type": "boolean"
+			},
+			{
+				"key": "payload",
+				"value": "{}",
+				"type": "string"
+			},
+			{
+				"key": "headerPrefix",
+				"value": "Bearer",
+				"type": "string"
+			},
+			{
+				"key": "queryParamKey",
+				"value": "token",
+				"type": "string"
+			},
+			{
+				"key": "header",
+				"value": "{}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

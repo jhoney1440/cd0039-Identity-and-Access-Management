@@ -13,6 +13,7 @@ with app.app_context():
     setup_db(app)
 CORS(app)
 
+
 '''
 @TODO uncomment the following line to initialize the datbase
 !! NOTE THIS WILL DROP ALL RECORDS AND START YOUR DB FROM SCRATCH
@@ -34,6 +35,7 @@ with app.app_context():
 
 
 @app.route('/drinks', methods=['GET'])
+@requires_auth('get:drinks')
 def get_drinks():
     drinks = Drink.query.all()
 
@@ -56,12 +58,12 @@ def get_drinks():
 
 @app.route('/drinks-detail', methods=['GET'])
 @requires_auth('get:drinks-detail')
-def get_drink_detail(payload):
+def get_drink_detail(payloads):
     drinks = Drink.query.all()
 
     return jsonify({
         'success': True,
-        'drinks': [drink.long() for drink in drinks]
+        'drinks-detail': [drink.long() for drink in drinks]
     }), 200
 
 

@@ -6,14 +6,774 @@
 	},
 	"item": [
 		{
-			"name": "drinks",
+			"name": "drinks-detail - Manager",
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJwaWZnbDhER0VMZVBEN0V3Mlp3S0JiTzRlcnpYVmNtREBjbGllbnRzIiwiYXVkIjoiaW1hZ2UiLCJpYXQiOjE2ODAzNDY5MjQsImV4cCI6MTY4MDQzMzMyNCwiYXpwIjoicGlmZ2w4REdFTGVQRDdFdzJad0tCYk80ZXJ6WFZjbUQiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.Wc21tVMfZozEbKKFcghAriff_BKb9ChyrG46GsjbwVBVRZKOpU9H1E2esHQlz8UrlcPDquBKzTTEbUvWZhlm-tGw_NIuOqJu0BnN1U-_Xwaj4NjQvDQisTmcB9NbIsP60a8I1w44vD3n6YNZUKTdJwCgMST4LAU69I1rk4aAUpiLnfXh2IKYDxz9bhVwRGIR6yZ5HJzX-3GyA55Xg0bhRawmyTr077V-56D7skIpXRTgJ_1ukBhSYpYLgTYkh8KQkiW4h2tFAmXCLqCyHAsghVYJZdqUoXO_-UEOD4GTlGhZvrQYeRw6MU3TUlzNmnta0r_fqC",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMzkwNDA0NzE1MDEzMzM2MjA4MyIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzUyNzU0LCJleHAiOjE2ODA3NTk5NTQsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6ZHJpbmtzIiwiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.DbwvjiX6neL-HIwLPUjiv3dqAHFCDv3Et0h70X6eodFU2WGcIFm-luhZfXNqCGGlnl3Wz5KIlCPPTuBxwKb5EbPvcYNLXl4gadLVw4rsn9J5E8oYmH6un9LtBkpDnaxdNcBqc_OBJUlezwCvn7BAGz6pmEs1rxGv--PB1Vv5q1XyWILD3NVek854mDseLoLF8NgcFgwKl5rwrndVZHCBRH7SZY1OKpKcJgjaDKZOLwiuC69j8Ba1a2UIFja0HhgvsIsch3XyU0WWW7XQDx5yUH_dQubiZ994X4zx4aDdkRuEN8lOIFSKeNNvHD5CD91WYSZHVC9wo2s4tX_KD-SfIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks-detail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks-detail"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "drinks-detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks-detail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks-detail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 03:48:10 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "361"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"id\": 1,\n            \"recipe\": [\n                {\n                    \"color\": \"blue\",\n                    \"name\": \"water\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"water\"\n        },\n        {\n            \"id\": 2,\n            \"recipe\": [\n                {\n                    \"color\": \"Yellow\",\n                    \"name\": \"Mango\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"Mango Juice\"\n        },\n        {\n            \"id\": 3,\n            \"recipe\": [\n                {\n                    \"color\": \"Brown\",\n                    \"name\": \"Coffee\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"Coffee\"\n        },\n        {\n            \"id\": 4,\n            \"recipe\": [\n                {\n                    \"color\": \"orange\",\n                    \"name\": \"Orange\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"Orange Juice\"\n        }\n    ],\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "drinks-detail - Barista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMzA5OTAzMjEyODcwOTA1MTYyOSIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzYyOTg4LCJleHAiOjE2ODA3NzAxODgsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.lSrJpWiZUncyiXFBlMc6AOlDa8Nh9HRvf342-pq7Uqjp9t7MN_HNMAev2gvhPrY_zlqf91HebS7uYqeL9_142fvhKrjHQSLQhcQDLXZ37pM9zW3sPggo0WsO02FZZXLF7doZgg5l9XDZQXKbDkxgJEE0dPLsZVEhy6BSzTFNNlhLIf7Ytpg7FJf8p9i5EsHKzBQat2I8f8JkTH9-sF2U-ES8uBBpemq-siyOjhyoeuJneoQjfIA34ZIAipF27WNPsqyPl-k0wxZpHla14nlZTYREfzE5lw0qFkDhz1t1jt8AeHCG18HoLhTtmbBZ-_N6Wx8eXuAxdsZi5zu5QeBWpw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks-detail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks-detail"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "drinks-detail - Barista",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks-detail",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks-detail"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 06:36:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "106"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"id\": 1,\n            \"recipe\": [\n                {\n                    \"color\": \"blue\",\n                    \"name\": \"water\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"water\"\n        }\n    ],\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete - Manager",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMzkwNDA0NzE1MDEzMzM2MjA4MyIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzUyNzU0LCJleHAiOjE2ODA3NTk5NTQsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6ZHJpbmtzIiwiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.DbwvjiX6neL-HIwLPUjiv3dqAHFCDv3Et0h70X6eodFU2WGcIFm-luhZfXNqCGGlnl3Wz5KIlCPPTuBxwKb5EbPvcYNLXl4gadLVw4rsn9J5E8oYmH6un9LtBkpDnaxdNcBqc_OBJUlezwCvn7BAGz6pmEs1rxGv--PB1Vv5q1XyWILD3NVek854mDseLoLF8NgcFgwKl5rwrndVZHCBRH7SZY1OKpKcJgjaDKZOLwiuC69j8Ba1a2UIFja0HhgvsIsch3XyU0WWW7XQDx5yUH_dQubiZ994X4zx4aDdkRuEN8lOIFSKeNNvHD5CD91WYSZHVC9wo2s4tX_KD-SfIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks/7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks",
+						"7"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 04:05:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"delete\": 7,\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete - Barista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMzA5OTAzMjEyODcwOTA1MTYyOSIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzYyOTg4LCJleHAiOjE2ODA3NzAxODgsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.lSrJpWiZUncyiXFBlMc6AOlDa8Nh9HRvf342-pq7Uqjp9t7MN_HNMAev2gvhPrY_zlqf91HebS7uYqeL9_142fvhKrjHQSLQhcQDLXZ37pM9zW3sPggo0WsO02FZZXLF7doZgg5l9XDZQXKbDkxgJEE0dPLsZVEhy6BSzTFNNlhLIf7Ytpg7FJf8p9i5EsHKzBQat2I8f8JkTH9-sF2U-ES8uBBpemq-siyOjhyoeuJneoQjfIA34ZIAipF27WNPsqyPl-k0wxZpHla14nlZTYREfzE5lw0qFkDhz1t1jt8AeHCG18HoLhTtmbBZ-_N6Wx8eXuAxdsZi5zu5QeBWpw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete - Barista",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						}
+					},
+					"status": "FORBIDDEN",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 06:44:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": 403,\n    \"message\": \"Permission not found.\",\n    \"success\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Post - Manager",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMzkwNDA0NzE1MDEzMzM2MjA4MyIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzUyNzU0LCJleHAiOjE2ODA3NTk5NTQsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6ZHJpbmtzIiwiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.DbwvjiX6neL-HIwLPUjiv3dqAHFCDv3Et0h70X6eodFU2WGcIFm-luhZfXNqCGGlnl3Wz5KIlCPPTuBxwKb5EbPvcYNLXl4gadLVw4rsn9J5E8oYmH6un9LtBkpDnaxdNcBqc_OBJUlezwCvn7BAGz6pmEs1rxGv--PB1Vv5q1XyWILD3NVek854mDseLoLF8NgcFgwKl5rwrndVZHCBRH7SZY1OKpKcJgjaDKZOLwiuC69j8Ba1a2UIFja0HhgvsIsch3XyU0WWW7XQDx5yUH_dQubiZ994X4zx4aDdkRuEN8lOIFSKeNNvHD5CD91WYSZHVC9wo2s4tX_KD-SfIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Pine Apple2\",\r\n    \"recipe\": [\r\n        {\r\n            \"name\": \"pineapple2\",\r\n            \"color\": \"yellow\",\r\n            \"parts\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Pine Apple2\",\r\n    \"recipe\": [\r\n        {\r\n            \"name\": \"pineapple2\",\r\n            \"color\": \"yellow\",\r\n            \"parts\": 1\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 04:04:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "119"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"id\": 7,\n            \"recipe\": [\n                {\n                    \"color\": \"yellow\",\n                    \"name\": \"pineapple2\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"Pine Apple2\"\n        }\n    ],\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Post - Barista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMzA5OTAzMjEyODcwOTA1MTYyOSIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzYyOTg4LCJleHAiOjE2ODA3NzAxODgsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.lSrJpWiZUncyiXFBlMc6AOlDa8Nh9HRvf342-pq7Uqjp9t7MN_HNMAev2gvhPrY_zlqf91HebS7uYqeL9_142fvhKrjHQSLQhcQDLXZ37pM9zW3sPggo0WsO02FZZXLF7doZgg5l9XDZQXKbDkxgJEE0dPLsZVEhy6BSzTFNNlhLIf7Ytpg7FJf8p9i5EsHKzBQat2I8f8JkTH9-sF2U-ES8uBBpemq-siyOjhyoeuJneoQjfIA34ZIAipF27WNPsqyPl-k0wxZpHla14nlZTYREfzE5lw0qFkDhz1t1jt8AeHCG18HoLhTtmbBZ-_N6Wx8eXuAxdsZi5zu5QeBWpw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Pine Apple2\",\r\n    \"recipe\": [\r\n        {\r\n            \"name\": \"pineapple2\",\r\n            \"color\": \"yellow\",\r\n            \"parts\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post - Barista",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Pine Apple2\",\r\n    \"recipe\": [\r\n        {\r\n            \"name\": \"pineapple2\",\r\n            \"color\": \"yellow\",\r\n            \"parts\": 1\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						}
+					},
+					"status": "FORBIDDEN",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 06:43:44 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": 403,\n    \"message\": \"Permission not found.\",\n    \"success\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Drink - Manager",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMzkwNDA0NzE1MDEzMzM2MjA4MyIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzUyNzU0LCJleHAiOjE2ODA3NTk5NTQsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6ZHJpbmtzIiwiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.DbwvjiX6neL-HIwLPUjiv3dqAHFCDv3Et0h70X6eodFU2WGcIFm-luhZfXNqCGGlnl3Wz5KIlCPPTuBxwKb5EbPvcYNLXl4gadLVw4rsn9J5E8oYmH6un9LtBkpDnaxdNcBqc_OBJUlezwCvn7BAGz6pmEs1rxGv--PB1Vv5q1XyWILD3NVek854mDseLoLF8NgcFgwKl5rwrndVZHCBRH7SZY1OKpKcJgjaDKZOLwiuC69j8Ba1a2UIFja0HhgvsIsch3XyU0WWW7XQDx5yUH_dQubiZ994X4zx4aDdkRuEN8lOIFSKeNNvHD5CD91WYSZHVC9wo2s4tX_KD-SfIg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"recipe\": [\r\n        {\r\n            \"color\": \"orange\",\r\n            \"name\": \"Orange\",\r\n            \"parts\": 1\r\n        }\r\n    ],\r\n    \"title\": \"Orange Juice\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Drink",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"recipe\": [\r\n        {\r\n            \"color\": \"orange\",\r\n            \"name\": \"Orange\",\r\n            \"parts\": 1\r\n        }\r\n    ],\r\n    \"title\": \"Orange Juice\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 04:09:59 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"id\": 4,\n            \"recipe\": [\n                {\n                    \"color\": \"orange\",\n                    \"name\": \"Orange\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"Orange Juice\"\n        }\n    ],\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Drink - Barista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMzA5OTAzMjEyODcwOTA1MTYyOSIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzYyOTg4LCJleHAiOjE2ODA3NzAxODgsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.lSrJpWiZUncyiXFBlMc6AOlDa8Nh9HRvf342-pq7Uqjp9t7MN_HNMAev2gvhPrY_zlqf91HebS7uYqeL9_142fvhKrjHQSLQhcQDLXZ37pM9zW3sPggo0WsO02FZZXLF7doZgg5l9XDZQXKbDkxgJEE0dPLsZVEhy6BSzTFNNlhLIf7Ytpg7FJf8p9i5EsHKzBQat2I8f8JkTH9-sF2U-ES8uBBpemq-siyOjhyoeuJneoQjfIA34ZIAipF27WNPsqyPl-k0wxZpHla14nlZTYREfzE5lw0qFkDhz1t1jt8AeHCG18HoLhTtmbBZ-_N6Wx8eXuAxdsZi5zu5QeBWpw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"recipe\": [\r\n        {\r\n            \"color\": \"orange\",\r\n            \"name\": \"Orange\",\r\n            \"parts\": 1\r\n        }\r\n    ],\r\n    \"title\": \"Orange Juice\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Drink - Barista",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"recipe\": [\r\n        {\r\n            \"color\": \"orange\",\r\n            \"name\": \"Orange\",\r\n            \"parts\": 1\r\n        }\r\n    ],\r\n    \"title\": \"Orange Juice\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						}
+					},
+					"status": "FORBIDDEN",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 06:39:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "64"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": 403,\n    \"message\": \"Permission not found.\",\n    \"success\": false\n}"
+				}
+			]
+		},
+		{
+			"name": "Drinks Shorts - Manager",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMzkwNDA0NzE1MDEzMzM2MjA4MyIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzYyMTAwLCJleHAiOjE2ODA3NjkzMDAsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6ZHJpbmtzIiwiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.Os1D2r25J88GParCvTeIqaliOVSi65PSNODFZOhy7WK8Aygd7ZUAOrK6ZsdsH6a8KIgN_9wBmPhtwKrVAhd-KsLsVddzOsJBQJ-yox8af933yXxURygHATK83VF-m6J66x6FoJAWCtUd0a26HyL5fDJcU_VrhASeCfDT3aZFhRJ8zoXd9zKwjwgZeRDRXLlb834UYSyC4X7nHTyw-w9Mvvq2PdDkM-z3u_yrAnmixkBcaWafuizIEwiord7XAFJ02O-jV03iVqnfZMb-Nfdpv11AO25_v46e1bLc3qu68GRsCWK7ITig8PsIvBWtTQdS2dDKZh4Q9e4-3HBjy7CFGg",
 							"type": "string"
 						}
 					]
@@ -35,45 +795,153 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Drinks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 06:29:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"id\": 1,\n            \"recipe\": [\n                {\n                    \"color\": \"blue\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"water\"\n        }\n    ],\n    \"success\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Drinks Shorts - Barista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwMzA5OTAzMjEyODcwOTA1MTYyOSIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNzYyOTg4LCJleHAiOjE2ODA3NzAxODgsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6ZHJpbmtzIiwiZ2V0OmRyaW5rcy1kZXRhaWwiXX0.lSrJpWiZUncyiXFBlMc6AOlDa8Nh9HRvf342-pq7Uqjp9t7MN_HNMAev2gvhPrY_zlqf91HebS7uYqeL9_142fvhKrjHQSLQhcQDLXZ37pM9zW3sPggo0WsO02FZZXLF7doZgg5l9XDZQXKbDkxgJEE0dPLsZVEhy6BSzTFNNlhLIf7Ytpg7FJf8p9i5EsHKzBQat2I8f8JkTH9-sF2U-ES8uBBpemq-siyOjhyoeuJneoQjfIA34ZIAipF27WNPsqyPl-k0wxZpHla14nlZTYREfzE5lw0qFkDhz1t1jt8AeHCG18HoLhTtmbBZ-_N6Wx8eXuAxdsZi5zu5QeBWpw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Drinks Shorts - Barista",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/drinks",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"drinks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.10.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 06 Apr 2023 06:38:03 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "91"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"drinks\": [\n        {\n            \"id\": 1,\n            \"recipe\": [\n                {\n                    \"color\": \"blue\",\n                    \"parts\": 1\n                }\n            ],\n            \"title\": \"water\"\n        }\n    ],\n    \"success\": true\n}"
+				}
+			]
 		}
 	],
 	"auth": {
-		"type": "jwt",
-		"jwt": [
+		"type": "bearer",
+		"bearer": [
 			{
-				"key": "addTokenTo",
-				"value": "header",
-				"type": "string"
-			},
-			{
-				"key": "algorithm",
-				"value": "HS256",
-				"type": "string"
-			},
-			{
-				"key": "isSecretBase64Encoded",
-				"value": false,
-				"type": "boolean"
-			},
-			{
-				"key": "payload",
-				"value": "{}",
-				"type": "string"
-			},
-			{
-				"key": "headerPrefix",
-				"value": "Bearer",
-				"type": "string"
-			},
-			{
-				"key": "queryParamKey",
-				"value": "token",
-				"type": "string"
-			},
-			{
-				"key": "header",
-				"value": "{}",
+				"key": "token",
+				"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDExMzkwNDA0NzE1MDEzMzM2MjA4MyIsImF1ZCI6ImltYWdlIiwiaWF0IjoxNjgwNjk0NTU0LCJleHAiOjE2ODA3MDE3NTQsImF6cCI6InBpZmdsOERHRUxlUEQ3RXcyWndLQmJPNGVyelhWY21EIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6ZHJpbmtzIiwiZ2V0OmRyaW5rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDpkcmlua3MiXX0.BaM7OhULKkS2mar3tkQCzQMhL4G68bVSBE9_6A8ON-Ct1FJJbuP1J_Y70TOKYvKCnQbjPX-DEks9_Bdcr_C3Eev75aQsjaXli8BAAAjzwY7ftubD-Acei-ZxxipGtAPDvfGk1B96BVAQXcMHA9wZRjcmRr9nbATWKNjh4Ty8KHrYLYAE1PiYly9NPHcMIaLV3yxWekFLfGQmQNaijCnMC0VnYstqQscT3q5U6FaijfEb1fsJlTS3q6fWk4QwVNXFiJdeWueNUp9D6KvbbIrFFHt9_UKruiBQ35mfqxPEJ2Kk1UiJSyCMHH-GLUMkLQrxu8oIMXiODgC-IRysp4SOqw",
 				"type": "string"
 			}
 		]
@@ -96,6 +964,12 @@
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InRObVBFMzhsVi15TnpOX0o4MC05UCJ9.eyJpc3MiOiJodHRwczovL2Rldi1iZmtpdTA4ZW91YWx2Z2JvLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJwaWZnbDhER0VMZVBEN0V3Mlp3S0JiTzRlcnpYVmNtREBjbGllbnRzIiwiYXVkIjoiaW1hZ2UiLCJpYXQiOjE2ODAzNDY5MjQsImV4cCI6MTY4MDQzMzMyNCwiYXpwIjoicGlmZ2w4REdFTGVQRDdFdzJad0tCYk80ZXJ6WFZjbUQiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.Wc21tVMfZozEbKKFcghAriff_BKb9ChyrG46GsjbwVBVRZKOpU9H1E2esHQlz8UrlcPDquBKzTTEbUvWZhlm-tGw_NIuOqJu0BnN1U-_Xwaj4NjQvDQisTmcB9NbIsP60a8I1w44vD3n6YNZUKTdJwCgMST4LAU69I1rk4aAUpiLnfXh2IKYDxz9bhVwRGIR6yZ5HJzX-3GyA55Xg0bhRawmyTr077V-56D7skIpXRTgJ_1ukBhSYpYLgTYkh8KQkiW4h2tFAmXCLqCyHAsghVYJZdqUoXO_-UEOD4GTlGhZvrQYeRw6MU3TUlzNmnta0r_fqC"
 		}
 	]
 }
